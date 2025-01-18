@@ -40,6 +40,14 @@ class AuthController {
           }
      }
 
+     async login(req, res) {
+          try {
+
+          } catch (error) {
+               return res.status(500).json({ message: "Server error", type: "error" })
+          }
+     }
+
      async verify(req, res) {
           try {
                const { email, code } = req.body;
